@@ -137,7 +137,7 @@ def dreem_sleep_apnea_custom_metric(y_pred, y_true):
 if __name__ == '__main__':
     import pandas as pd
     CSV_FILE_Y_TRUE = 'y_train.csv'
-    CSV_FILE_Y_PRED = 'y_benchmark.csv'
+    CSV_FILE_Y_PRED = 'y_ours.csv'
     df_y_true = pd.read_csv(CSV_FILE_Y_TRUE, index_col=0, sep=',')
     df_y_pred = pd.read_csv(CSV_FILE_Y_PRED, index_col=0, sep=',')
     print(dreem_sleep_apnea_custom_metric(df_y_true, df_y_pred))
